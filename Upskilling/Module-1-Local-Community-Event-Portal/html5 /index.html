@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- Ex 1: HTML5 Base Template -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Community Event Portal</title>
+
+  <!-- Ex 3: Internal CSS -->
+  <style>
+    /* Ex 3 – welcome banner */
+    #welcomeBanner {
+      background-color: #1a73e8;
+      color: #fff;
+      padding: 20px 30px;
+      font-family: 'Segoe UI', sans-serif;
+      border-radius: 0 0 12px 12px;
+    }
+    .highlight { background-color: #fff3cd; padding: 2px 6px; border-radius: 4px; }
+
+    /* General */
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; color: #333; background: #f8f9fa; }
+    nav  { background: #0d1b2a; padding: 14px 24px; }
+    nav a { color: #e0e0e0; margin-right: 20px; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #64b5f6; }
+    section { padding: 40px 30px; max-width: 960px; margin: auto; }
+    h2 { color: #0d1b2a; border-bottom: 2px solid #1a73e8; padding-bottom: 6px; }
+    table { border-collapse: collapse; width: 100%; }
+    table td, table th { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    table img { width: 200px; height: 130px; object-fit: cover; border: 2px solid #1a73e8; border-radius: 6px; }
+    form label { display: block; margin-top: 14px; font-weight: 600; }
+    form input, form select, form textarea {
+      width: 100%; padding: 9px 12px; margin-top: 4px;
+      border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;
+    }
+    form button { margin-top: 16px; padding: 10px 28px; background: #1a73e8; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+    form button:hover { background: #1558b0; }
+    output { display: block; margin-top: 12px; color: green; font-weight: bold; }
+    #charCount { font-size: .85rem; color: #888; }
+    .fee-display { margin-top: 8px; color: #e65100; font-weight: bold; }
+    footer { background: #0d1b2a; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; }
+    video { max-width: 100%; border-radius: 8px; }
+    #videoMsg { color: #1a73e8; font-weight: bold; margin-top: 8px; }
+    #storageMsg { margin-top: 8px; color: #2e7d32; }
+    .btn-sm { padding: 6px 14px; background: #e53935; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVIGATION (Ex 2) ========== -->
+<nav>
+  <a href="#home">🏠 Home</a>
+  <a href="#events">📅 Events</a>
+  <a href="#gallery">🖼 Gallery</a>
+  <a href="#register">📝 Register</a>
+  <a href="#feedback">💬 Feedback</a>
+  <a href="#video">🎬 Video</a>
+  <a href="#prefs">⚙ Preferences</a>
+  <a href="#geo">📍 Location</a>
+  <a href="help.html" target="_blank">❓ Help</a>
+</nav>
+
+<!-- ========== WELCOME BANNER (Ex 3) ========== -->
+<div id="welcomeBanner">
+  <h1>Welcome to the <span class="highlight">Community Event Portal</span></h1>
+  <!-- Ex 3: inline style for special offer span -->
+  <p>Hello, Resident! Check out our
+    <span style="color:#ffd54f; font-weight:bold;">Special Offer: Free registration this week!</span>
+  </p>
+</div>
+
+<!-- ========== HOME SECTION ========== -->
+<section id="home">
+  <h2>About the Portal</h2>
+  <p>Stay connected with your local community. Browse upcoming events, register online, and share your feedback with the city council.</p>
+</section>
+
+<!-- ========== EVENTS SECTION ========== -->
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <ul>
+    <li class="highlight">🎨 Art Exhibition – 15 June 2025</li>
+    <li>🎵 Music in the Park – 22 June 2025</li>
+    <li>🍳 Baking Workshop – 29 June 2025</li>
+  </ul>
+</section>
+
+<!-- ========== IMAGE GALLERY TABLE (Ex 4) ========== -->
+<section id="gallery">
+  <h2>Event Gallery</h2>
+  <table>
+    <tr>
+      <td>
+        <img src="https://picsum.photos/seed/art/400/260"
+             alt="Art Exhibition" title="Community Art Exhibition" class="event-img" />
+        <p>Art Exhibition</p>
+      </td>
+      <td>
+        <img src="https://picsum.photos/seed/music/400/260"
+             alt="Music Festival" title="Music in the Park" class="event-img" />
+        <p>Music Festival</p>
+      </td>
+      <td>
+        <img src="https://picsum.photos/seed/baking/400/260"
+             alt="Baking Workshop" title="Baking Workshop" class="event-img"
+             ondblclick="this.style.transform = this.style.transform ? '' : 'scale(1.8)'; this.style.transition='0.3s'; this.style.zIndex='10'; this.style.position='relative';" />
+        <p>Baking Workshop (double-click to enlarge)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://picsum.photos/seed/yoga/400/260"
+             alt="Yoga Camp" title="Morning Yoga Camp" class="event-img" />
+        <p>Yoga Camp</p>
+      </td>
+      <td>
+        <img src="https://picsum.photos/seed/kids/400/260"
+             alt="Kids Fair" title="Kids Fun Fair" class="event-img" />
+        <p>Kids Fun Fair</p>
+      </td>
+      <td>
+        <img src="https://picsum.photos/seed/clean/400/260"
+             alt="Clean Drive" title="Community Clean Drive" class="event-img" />
+        <p>Clean Drive</p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ========== EVENT REGISTRATION FORM (Ex 5, 6) ========== -->
+<section id="register">
+  <h2>Event Registration</h2>
+  <form id="regForm" onsubmit="handleSubmit(event)">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name"
+           required autofocus />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="10-digit number"
+           onblur="validatePhone(this)" />
+
+    <label for="eventDate">Event Date</label>
+    <input type="date" id="eventDate" name="eventDate" required />
+
+    <!-- Ex 6: onchange to display event fee -->
+    <label for="eventType">Event Type</label>
+    <select id="eventType" name="eventType" onchange="showFee(this.value)">
+      <option value="">-- Select Event --</option>
+      <option value="art">Art Exhibition (Free)</option>
+      <option value="music">Music Festival (₹50)</option>
+      <option value="baking">Baking Workshop (₹150)</option>
+      <option value="yoga">Yoga Camp (₹100)</option>
+    </select>
+    <div class="fee-display" id="feeDisplay"></div>
+
+    <label for="message">Additional Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Any special requirements..."></textarea>
+
+    <!-- Ex 6: onclick submit button -->
+    <button type="submit" id="submitBtn" onclick="console.log('Submit clicked')">Register Now</button>
+
+    <!-- Ex 5: output element -->
+    <output id="confirmOutput"></output>
+  </form>
+</section>
+
+<!-- ========== FEEDBACK SECTION (Ex 6) ========== -->
+<section id="feedback">
+  <h2>Event Feedback</h2>
+  <textarea id="feedbackText" rows="5" style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;"
+            placeholder="Share your experience..."
+            onkeyup="countChars(this)"></textarea>
+  <div id="charCount">0 / 300 characters</div>
+</section>
+
+<!-- ========== VIDEO SECTION (Ex 7) ========== -->
+<section id="video">
+  <h2>Event Promo Video</h2>
+  <!-- Using a public sample mp4 for demo -->
+  <video controls
+         src="https://www.w3schools.com/html/mov_bbb.mp4"
+         poster="https://picsum.photos/seed/event/640/360"
+         oncanplay="document.getElementById('videoMsg').textContent = '✅ Video is ready to play!'">
+    Your browser does not support the video tag.
+  </video>
+  <p id="videoMsg"></p>
+</section>
+
+<!-- ========== PREFERENCES (Ex 8: localStorage) ========== -->
+<section id="prefs">
+  <h2>Your Preferences</h2>
+  <label for="prefEvent"><strong>Preferred Event Type:</strong></label>
+  <select id="prefEvent" onchange="savePref(this.value)" style="padding:8px; border-radius:5px; border:1px solid #ccc; margin-top:6px;">
+    <option value="">-- Choose --</option>
+    <option value="art">Art</option>
+    <option value="music">Music</option>
+    <option value="baking">Baking</option>
+    <option value="yoga">Yoga</option>
+  </select>
+  <p id="storageMsg"></p>
+  <button class="btn-sm" onclick="clearPrefs()">🗑 Clear Preferences</button>
+</section>
+
+<!-- ========== GEOLOCATION (Ex 9) ========== -->
+<section id="geo">
+  <h2>Find Nearby Events</h2>
+  <button onclick="findLocation()" style="padding:10px 22px; background:#1a73e8; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:1rem;">
+    📍 Find Nearby Events
+  </button>
+  <p id="geoResult" style="margin-top:12px; font-weight:500;"></p>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <p>© 2025 Local Community Event Portal | City Council Initiative</p>
+</footer>
+
+<!-- ========== JAVASCRIPT (Ex 6, 7, 8, 9) ========== -->
+<script>
+  // Ex 7: onbeforeunload – warn if form is dirty
+  let formDirty = false;
+  document.getElementById('regForm').addEventListener('input', () => formDirty = true);
+  window.onbeforeunload = (e) => {
+    if (formDirty) { e.preventDefault(); e.returnValue = ''; }
+  };
+
+  // Ex 5 & 6: Form submit handler
+  function handleSubmit(e) {
+    e.preventDefault();
+    formDirty = false;
+    const name = document.getElementById('name').value;
+    const event = document.getElementById('eventType').value || 'an event';
+    document.getElementById('confirmOutput').textContent =
+      `✅ Thank you, ${name}! You have successfully registered for ${event}.`;
+    console.log('Form submitted', { name, event });
+  }
+
+  // Ex 6: Validate phone on blur
+  function validatePhone(input) {
+    const val = input.value.replace(/\D/g, '');
+    if (val.length !== 10) {
+      input.style.borderColor = 'red';
+      alert('Please enter a valid 10-digit phone number.');
+    } else {
+      input.style.borderColor = 'green';
+    }
+  }
+
+  // Ex 6: Show event fee on change
+  const fees = { art: 'Free', music: '₹50', baking: '₹150', yoga: '₹100' };
+  function showFee(val) {
+    document.getElementById('feeDisplay').textContent =
+      val ? `Registration Fee: ${fees[val]}` : '';
+  }
+
+  // Ex 6: Key events – character count
+  function countChars(el) {
+    const len = el.value.length;
+    document.getElementById('charCount').textContent = `${len} / 300 characters`;
+    if (len > 300) el.value = el.value.substring(0, 300);
+  }
+
+  // Ex 8: localStorage
+  function savePref(val) {
+    if (!val) return;
+    localStorage.setItem('preferredEvent', val);
+    sessionStorage.setItem('sessionEvent', val);
+    document.getElementById('storageMsg').textContent = `✅ Preference "${val}" saved!`;
+  }
+  function clearPrefs() {
+    localStorage.clear(); sessionStorage.clear();
+    document.getElementById('prefEvent').value = '';
+    document.getElementById('storageMsg').textContent = '🗑 Preferences cleared.';
+  }
+  // Load saved pref on page load
+  window.addEventListener('load', () => {
+    const saved = localStorage.getItem('preferredEvent');
+    if (saved) {
+      document.getElementById('prefEvent').value = saved;
+      document.getElementById('storageMsg').textContent = `Welcome back! Loaded preference: "${saved}"`;
+    }
+  });
+
+  // Ex 9: Geolocation
+  function findLocation() {
+    const out = document.getElementById('geoResult');
+    if (!navigator.geolocation) {
+      out.textContent = '❌ Geolocation is not supported by your browser.';
+      return;
+    }
+    out.textContent = '🔍 Detecting your location...';
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude, accuracy } = pos.coords;
+        out.textContent =
+          `📍 Latitude: ${latitude.toFixed(5)}, Longitude: ${longitude.toFixed(5)} (Accuracy: ${accuracy.toFixed(0)}m)`;
+      },
+      (err) => {
+        const msgs = {
+          1: '❌ Permission denied. Please allow location access.',
+          2: '❌ Position unavailable.',
+          3: '❌ Request timed out.'
+        };
+        out.textContent = msgs[err.code] || '❌ Unknown error.';
+      },
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 0 }
+    );
+  }
+</script>
+</body>
+</html>

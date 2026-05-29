@@ -1,0 +1,16 @@
+// Ex 19.2 – Customize Bootstrap via _variables.scss overrides
+// Run: npx sass scss/custom.scss dist/css/custom.css
+
+// Override primary color
+$primary: #1a73e8;
+$secondary: #0d1b2a;
+
+// Override border radius
+$border-radius: 0.6rem;
+$border-radius-pill: 50rem;
+
+// Override font
+$font-family-base: 'Lato', sans-serif;
+
+// Import all of Bootstrap after variable overrides
+@import "../node_modules/bootstrap/scss/bootstrap";

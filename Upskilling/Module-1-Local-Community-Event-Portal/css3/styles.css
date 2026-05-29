@@ -1,0 +1,250 @@
+/* =============================================
+   styles.css – CSS3 Exercises Solution
+   Local Community Event Portal
+   ============================================= */
+
+/* ---- Ex 1: Universal selector reset ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Ex 5: Font family (Google Fonts) ---- */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ---- Ex 3: ID selector for banner ---- */
+#mainHeader {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 24px 20px 10px;
+  /* color set inline as per Ex 1 requirement */
+}
+
+/* ---- Ex 4: Gradient header ---- */
+.hero {
+  background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 60%, #0a3d8f 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.lead {
+  font-size: 1.15rem;
+  opacity: .88;
+}
+
+/* ---- Ex 3: Element selector for all h2 ---- */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+/* ---- Ex 3: Grouping selector ---- */
+h3, p {
+  margin-bottom: 10px;
+}
+
+/* ---- Navigation (Ex 6: link and list styling) ---- */
+nav {
+  background: #0d1b2a;
+  padding: 0 30px;
+}
+
+nav ul {
+  list-style-type: none;     /* Ex 6: remove bullets */
+  display: flex;
+  gap: 0;
+}
+
+nav ul li {
+  padding: 0;                /* Ex 6: padding on list items */
+}
+
+/* Ex 6: pseudo-class link styling */
+nav ul li a:link    { color: #e0e0e0; text-decoration: none; display: block; padding: 16px 20px; }
+nav ul li a:visited { color: #b0bec5; }
+nav ul li a:hover   { color: #fff; background: #1a73e8; }
+nav ul li a:active  { color: #64b5f6; }
+
+/* ---- Sections layout ---- */
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 24px;
+}
+
+/* ---- Ex 3: Class selector .eventCard (Ex 8: box model) ---- */
+.eventCard {
+  background: #fff;
+  border: 1px solid #dce8ff;     /* Ex 8: border */
+  border-radius: 10px;
+  padding: 24px 28px;            /* Ex 8: padding */
+  margin-bottom: 20px;           /* Ex 8: margin */
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.eventCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+}
+
+/* ---- Ex 2: CTA button style ---- */
+/* Style for main CTA button */
+.cta-button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 9px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: .95rem;
+  transition: background .2s;
+}
+.cta-button:hover { background-color: #1558b0; }
+
+/* ---- Ex 9: Multi-column bulletin ---- */
+.bulletin-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid #b0bec5;
+  text-align: justify;
+  font-size: .97rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* ---- Ex 7: Table styling ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;    /* Ex 7 */
+  text-align: center;           /* Ex 7 */
+  font-size: .95rem;
+}
+
+table th {
+  background: #0d47a1;
+  color: #fff;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+}
+
+table td {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+}
+
+/* Ex 7: Zebra striping */
+table tbody tr:nth-child(even) {
+  background-color: #e8f0fe;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+table tbody tr:hover {
+  background-color: #bbdefb;
+}
+
+/* ---- Ex 5: Typography utilities ---- */
+.text-uppercase  { text-transform: uppercase; }
+.text-lowercase  { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+.letter-spaced   { letter-spacing: 2px; }
+
+/* ---- Ex 8: Contact Form (box model, outline) ---- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 520px;
+}
+
+.form-input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  transition: outline .15s;
+}
+
+/* Ex 8: outline on focus (compare visibility vs display) */
+.form-input:focus {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+  border-color: #1a73e8;
+}
+
+/* ---- Ex 4: RGBA text color example ---- */
+.muted-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---- Footer ---- */
+footer {
+  background: #0d1b2a;
+  color: #90a4ae;
+  text-align: center;
+  padding: 24px;
+  margin-top: 60px;
+  font-size: .9rem;
+}
+
+/* ============================================
+   Ex 10: Responsive Media Queries
+   ============================================ */
+@media (max-width: 768px) {
+  /* Stack nav links vertically */
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li a {
+    padding: 12px 20px;
+  }
+
+  /* Bulletin: single column on mobile */
+  .bulletin-article {
+    column-count: 1;
+  }
+
+  /* Scale down fonts */
+  #mainHeader { font-size: 1.7rem; }
+  .hero h2    { font-size: 1.4rem; }
+  h2          { font-size: 1.3rem; }
+
+  /* Flexible layout using % */
+  section {
+    padding: 0 16px;
+    margin: 30px auto;
+  }
+
+  /* Scrollable table on small screens */
+  table {
+    font-size: .82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #mainHeader { font-size: 1.3rem; }
+  .hero { padding: 36px 16px; }
+}

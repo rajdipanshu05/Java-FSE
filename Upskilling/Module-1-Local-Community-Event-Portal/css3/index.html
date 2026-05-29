@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS3 – Community Event Portal</title>
+
+  <!-- Ex 5: Google Font via <link> -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Ex 1: Embedded internal style (body background) -->
+  <style>
+    body { background-color: #f0f4f8; }
+  </style>
+
+  <!-- Ex 1: External stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ex 1: inline style on one heading -->
+  <h1 id="mainHeader" style="color: red;">Local Community Event Portal</h1>
+
+  <!-- Navigation (Ex 6) -->
+  <nav>
+    <ul>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#bulletin">Bulletin</a></li>
+      <li><a href="#admin">Admin</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section (Ex 4: gradient) -->
+  <header class="hero">
+    <h2>Connect. Participate. Celebrate.</h2>
+    <p class="lead">Your one-stop portal for local community events.</p>
+  </header>
+
+  <!-- Events Section (Ex 2, 3) -->
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div class="eventCard">
+      <h3>🎨 Art Exhibition</h3>
+      <p>Join us for a vibrant showcase of local talent at the City Gallery on <strong>15 June 2025</strong>.</p>
+      <a href="#register" class="cta-button">Register Now</a>
+    </div>
+    <div class="eventCard">
+      <h3>🎵 Music in the Park</h3>
+      <p>An open-air concert featuring local bands — free entry for all residents.</p>
+      <a href="#register" class="cta-button">Register Now</a>
+    </div>
+    <div class="eventCard">
+      <h3>🍳 Baking Workshop</h3>
+      <p>Learn to bake artisan bread with our award-winning community chef.</p>
+      <a href="#register" class="cta-button">Register Now</a>
+    </div>
+  </section>
+
+  <!-- Community Bulletin (Ex 9: multi-column) -->
+  <section id="bulletin">
+    <h2>Community Bulletin</h2>
+    <article class="bulletin-article">
+      The city council has approved a new community park in the east district.
+      Construction begins next month and is expected to complete by September 2025.
+      Residents are invited to attend public consultations every Tuesday evening.
+      A brand-new cycling track will also be included in the park layout.
+      Volunteers for the green-drive initiative can sign up at the council office.
+      The annual flower festival has been moved to the central plaza this year.
+      Free yoga classes will be offered every Saturday morning in the park.
+      All feedback can be submitted through this portal or at the town hall.
+    </article>
+  </section>
+
+  <!-- Admin Table (Ex 7) -->
+  <section id="admin">
+    <h2>Events Admin Table</h2>
+    <table>
+      <thead>
+        <tr><th>Event</th><th>Date</th><th>Venue</th><th>Fee</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Art Exhibition</td><td>15 Jun 2025</td><td>City Gallery</td><td>Free</td><td>Open</td></tr>
+        <tr><td>Music Festival</td><td>22 Jun 2025</td><td>Central Park</td><td>₹50</td><td>Open</td></tr>
+        <tr><td>Baking Workshop</td><td>29 Jun 2025</td><td>Community Hall</td><td>₹150</td><td>Filling Fast</td></tr>
+        <tr><td>Yoga Camp</td><td>06 Jul 2025</td><td>Riverside Garden</td><td>₹100</td><td>Open</td></tr>
+        <tr><td>Kids Fair</td><td>13 Jul 2025</td><td>School Ground</td><td>Free</td><td>Open</td></tr>
+        <tr><td>Clean Drive</td><td>20 Jul 2025</td><td>Market Street</td><td>Free</td><td>Volunteers Needed</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact Form (Ex 8: box model, outline) -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" class="form-input" />
+      <input type="email" placeholder="Your Email" class="form-input" />
+      <textarea rows="4" placeholder="Your Message" class="form-input"></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Local Community Event Portal</p>
+  </footer>
+
+</body>
+</html>
