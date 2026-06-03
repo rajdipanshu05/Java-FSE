@@ -1,7 +1,7 @@
 // Q11 - Factorial Calculator
 import java.util.Scanner;
 
-public class FactorialCalculator {
+public class Q11_FactorialCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a non-negative integer: ");

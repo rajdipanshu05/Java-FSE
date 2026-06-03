@@ -7,7 +7,7 @@ class InvalidAgeException extends Exception {
     }
 }
 
-public class CustomException {
+public class Q21_CustomException {
 
     static void checkAge(int age) throws InvalidAgeException {
         if (age < 18) {

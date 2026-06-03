@@ -1,5 +1,5 @@
 // Q7 - Type Casting Example
-public class TypeCastingExample {
+public class Q07_TypeCastingExample {
     public static void main(String[] args) {
         double d = 9.78;
         int i = (int) d;

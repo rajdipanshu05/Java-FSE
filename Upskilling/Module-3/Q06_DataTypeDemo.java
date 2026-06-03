@@ -1,5 +1,5 @@
 // Q6 - Data Type Demonstration
-public class DataTypeDemo {
+public class Q06_DataTypeDemo {
     public static void main(String[] args) {
         int age = 25;
         float price = 99.99f;

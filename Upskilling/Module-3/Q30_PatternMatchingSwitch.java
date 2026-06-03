@@ -1,5 +1,5 @@
 // Q30 - Pattern Matching for switch (Java 21)
-public class PatternMatchingSwitch {
+public class Q30_PatternMatchingSwitch {
 
     static void checkType(Object obj) {
         String result = switch (obj) {

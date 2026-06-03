@@ -1,5 +1,5 @@
 // Q8 - Operator Precedence
-public class OperatorPrecedence {
+public class Q08_OperatorPrecedence {
     public static void main(String[] args) {
         int result1 = 10 + 5 * 2;
         System.out.println("10 + 5 * 2 = " + result1);  // 20, * first

@@ -1,14 +1,14 @@
 // Q38 - Decompile a Class File
-// Step 1: Compile this file -> javac DecompileExample.java
+// Step 1: Compile this file -> javac Q38_DecompileExample.java
 // Step 2: Open DecompileExample.class in JD-GUI or run:
-//         java -jar cfr.jar DecompileExample.class
+//         java -jar cfr.jar Q38_DecompileExample.class
 
-public class DecompileExample {
+public class Q38_DecompileExample {
 
     private String name;
     private int age;
 
-    DecompileExample(String name, int age) {
+    Q38_DecompileExample(String name, int age) {
         this.name = name;
         this.age  = age;
     }
@@ -18,7 +18,7 @@ public class DecompileExample {
     }
 
     public static void main(String[] args) {
-        DecompileExample obj = new DecompileExample("Alice", 25);
+        Q38_DecompileExample obj = new Q38_DecompileExample("Alice", 25);
         obj.display();
     }
 }

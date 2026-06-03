@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
-public class ExecutorServiceExample {
+public class Q41_ExecutorServiceExample {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService executor = Executors.newFixedThreadPool(3);
         List<Future<Integer>> results = new ArrayList<>();

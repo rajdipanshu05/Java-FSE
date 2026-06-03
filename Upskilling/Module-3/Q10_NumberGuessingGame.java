@@ -2,7 +2,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class NumberGuessingGame {
+public class Q10_NumberGuessingGame {
     public static void main(String[] args) {
         Random rand = new Random();
         int secret = rand.nextInt(100) + 1;

@@ -2,7 +2,7 @@
 // Compile this file and then run: javap -c BytecodeInspection
 // Output will show the JVM bytecode instructions.
 
-public class BytecodeInspection {
+public class Q37_BytecodeInspection {
 
     static int addNumbers(int a, int b) {
         return a + b;

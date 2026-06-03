@@ -1,7 +1,7 @@
 // Q14 - Array Sum and Average
 import java.util.Scanner;
 
-public class ArraySumAverage {
+public class Q14_ArraySumAverage {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of elements: ");

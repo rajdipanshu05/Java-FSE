@@ -1,5 +1,5 @@
 // Q12 - Method Overloading
-public class MethodOverloading {
+public class Q12_MethodOverloading {
 
     static int add(int a, int b) {
         return a + b;

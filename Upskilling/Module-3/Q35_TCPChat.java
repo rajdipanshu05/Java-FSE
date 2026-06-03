@@ -46,7 +46,7 @@ class TCPClient {
     }
 }
 
-public class TCPChat {
+public class Q35_TCPChat {
     public static void main(String[] args) {
         System.out.println("Run TCPServer and TCPClient as separate programs.");
         System.out.println("Compile both and run in different terminals.");

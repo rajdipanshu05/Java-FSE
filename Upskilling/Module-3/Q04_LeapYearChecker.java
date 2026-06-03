@@ -1,7 +1,7 @@
 // Q4 - Leap Year Checker
 import java.util.Scanner;
 
-public class LeapYearChecker {
+public class Q04_LeapYearChecker {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a year: ");

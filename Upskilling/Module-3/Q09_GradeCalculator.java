@@ -1,7 +1,7 @@
 // Q9 - Grade Calculator
 import java.util.Scanner;
 
-public class GradeCalculator {
+public class Q09_GradeCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter marks (0-100): ");

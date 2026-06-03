@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class TransactionHandling {
+public class Q33_TransactionHandling {
 
     static void transfer(int fromId, int toId, double amount) {
         String debit  = "UPDATE accounts SET balance = balance - ? WHERE id = ?";

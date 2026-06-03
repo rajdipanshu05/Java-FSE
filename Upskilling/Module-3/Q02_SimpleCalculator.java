@@ -1,7 +1,7 @@
 // Q2 - Simple Calculator
 import java.util.Scanner;
 
-public class SimpleCalculator {
+public class Q02_SimpleCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

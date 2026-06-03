@@ -1,7 +1,7 @@
 // Q3 - Even or Odd Checker
 import java.util.Scanner;
 
-public class EvenOddChecker {
+public class Q03_EvenOddChecker {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer: ");

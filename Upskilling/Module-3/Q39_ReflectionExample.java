@@ -11,7 +11,7 @@ class SampleClass {
     }
 }
 
-public class ReflectionExample {
+public class Q39_ReflectionExample {
     public static void main(String[] args) throws Exception {
         Class<?> cls = Class.forName("SampleClass");
 

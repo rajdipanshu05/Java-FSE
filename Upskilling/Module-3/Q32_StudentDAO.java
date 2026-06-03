@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class StudentDAO {
+public class Q32_StudentDAO {
 
     static Connection getConnection() throws Exception {
         return DriverManager.getConnection(

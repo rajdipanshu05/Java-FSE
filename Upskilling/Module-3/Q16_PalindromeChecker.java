@@ -1,7 +1,7 @@
 // Q16 - Palindrome Checker
 import java.util.Scanner;
 
-public class PalindromeChecker {
+public class Q16_PalindromeChecker {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");

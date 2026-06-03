@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class LambdaExample {
+public class Q27_LambdaExample {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Zara", "Alice", "Mona", "Bob", "Charlie");
 

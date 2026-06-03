@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class JDBCConnection {
+public class Q31_JDBCConnection {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/school";
         String user = "root";

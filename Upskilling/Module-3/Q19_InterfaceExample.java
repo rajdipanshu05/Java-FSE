@@ -15,7 +15,7 @@ class Piano implements Playable {
     }
 }
 
-public class InterfaceExample {
+public class Q19_InterfaceExample {
     public static void main(String[] args) {
         Playable g = new Guitar();
         Playable p = new Piano();

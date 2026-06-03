@@ -1,7 +1,7 @@
 // Q13 - Recursive Fibonacci
 import java.util.Scanner;
 
-public class RecursiveFibonacci {
+public class Q13_RecursiveFibonacci {
 
     static int fibonacci(int n) {
         if (n <= 1) return n;

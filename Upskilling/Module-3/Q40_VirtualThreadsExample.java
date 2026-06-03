@@ -1,5 +1,5 @@
 // Q40 - Virtual Threads (Java 21)
-public class VirtualThreadsExample {
+public class Q40_VirtualThreadsExample {
     public static void main(String[] args) throws InterruptedException {
         long start = System.currentTimeMillis();
 
